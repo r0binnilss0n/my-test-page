@@ -11,6 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -29,7 +30,7 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          GRAPH_API_VERSION: v19.0
+          GRAPH_API_VERSION: v24.0
           IG_LIMIT: "5"
         run: |
           python scripts/update_instagram.py
