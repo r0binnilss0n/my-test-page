@@ -3,36 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robin Nilsson</title>
-
+<title>Aurora Digital</title>
 <style>
-:root {
-  --max-width: 1200px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
+:root { --max-width: 1200px; }
+* { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: #fafafa;
   color: #111;
 }
-
-/* HEADER IMAGE */
 .hero {
   height: 320px;
   background: url("assets/header.jpg") center/cover no-repeat;
 }
-
-/* NAVBAR */
-.navbar {
-  background: white;
-  border-bottom: 1px solid #eee;
-}
-
+.navbar { background: white; border-bottom: 1px solid #eee; }
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -40,16 +25,8 @@ body {
   display: flex;
   align-items: center;
 }
-
-.logo {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-nav {
-  margin-left: auto;
-}
-
+.logo { font-weight: 800; font-size: 18px; }
+nav { margin-left: auto; }
 nav a {
   text-decoration: none;
   margin-left: 20px;
@@ -57,26 +34,18 @@ nav a {
   font-weight: 500;
   transition: opacity 0.2s ease;
 }
-
-nav a:hover {
-  opacity: 0.6;
-}
-
-/* MAIN CONTENT */
+nav a:hover { opacity: 0.6; }
 main {
   max-width: var(--max-width);
-  margin: 50px auto;
-  padding: 0 20px 60px 20px;
+  margin: 42px auto;
+  padding: 0 20px 70px 20px;
 }
-
-/* GRID */
+h2 { margin: 0 0 16px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
-
-/* CARD */
 .card {
   display: block;
   background: white;
@@ -87,88 +56,64 @@ main {
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
-
 .card img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
 }
-
-/* META */
-.meta {
-  padding: 14px 16px;
-}
-
+.meta { padding: 14px 16px; }
 .caption {
   font-size: 14px;
   line-height: 1.4;
   max-height: 3.6em;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
-
-.link {
-  margin-top: 8px;
-  font-size: 13px;
-  opacity: 0.6;
+.link { margin-top: 8px; font-size: 13px; opacity: 0.6; }
+.footer {
+  margin-top: 24px;
+  font-size: 12px;
+  opacity: 0.55;
 }
 </style>
 </head>
-
 <body>
-
 <header class="hero"></header>
-
 <div class="navbar">
   <div class="nav-inner">
-    <div class="logo">Robin Nilsson</div>
+    <div class="logo">Aurora Digital</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="/">Home</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </div>
 </div>
-
 <main>
   <h2>Latest Instagram Posts</h2>
-  <div id="instagram-feed" class="grid"></div>
+  <div class="grid">
+    
+        <a class="card" href="https://www.instagram.com/p/DUyOz_kCLMN/" target="_blank" rel="noopener">
+          <img src="https://scontent-hkg4-1.cdninstagram.com/v/t51.82787-15/631799086_18024149021630491_1107837530461338478_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=106&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=WQGvHaOcyXQQ7kNvwGsp-Xb&amp;_nc_oc=Adk0QmZAmSoi89EEjpk53M7PfobUN6z-PcdupDSHlRLJpbjEYe3CRhwTsV05WV-r4CU&amp;_nc_zt=23&amp;_nc_ht=scontent-hkg4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=yeaUozdqeVG1ejYXaB13Hg&amp;_nc_tpa=Q5bMBQF_vig_jxy62admY0eG0lY9GOC8hj7Fl-RFYPNr0ojLzHkiA7jVFsORBn_kU2wtX1-SFJ8NvLVhxQ&amp;oh=00_Afv-PJU0tcEWhLBwkb-NezVPmIbVq8O0KgZW54u9t1ueug&amp;oe=6997D8FA" alt="" loading="lazy">
+          <div class="meta">
+            <div class="caption">Text nummer två</div>
+            <div class="link">Open on Instagram ↗</div>
+          </div>
+        </a>
+        
+        <a class="card" href="https://www.instagram.com/p/DUyLeVdCBdt/" target="_blank" rel="noopener">
+          <img src="https://scontent-hkg4-1.cdninstagram.com/v/t51.82787-15/632585860_18024142124630491_7907973401265748947_n.jpg?stp=dst-jpg_e35_tt6&amp;_nc_cat=108&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&amp;_nc_ohc=I40HxN8ScEMQ7kNvwEnuT0C&amp;_nc_oc=Admgjb9t0ve-qh1ETRFvTX9l3XU3lak-d6-wYYWX2JGPaROjSw9VdkueiIBPwovxYTk&amp;_nc_zt=23&amp;_nc_ht=scontent-hkg4-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;_nc_gid=yeaUozdqeVG1ejYXaB13Hg&amp;_nc_tpa=Q5bMBQFGXX01vEhBZsx7_xBTxbcMbfKfbyZx7KyJd5eHAEkmj47LSUefBzvUYXziNETj3xG_mhBPezV4qQ&amp;oh=00_Afs1cpERNSIvq5S5FhrIxDXlKkM33nSz4ZF37auUg3vp4A&amp;oe=6997C837" alt="" loading="lazy">
+          <div class="meta">
+            <div class="caption">Testing</div>
+            <div class="link">Open on Instagram ↗</div>
+          </div>
+        </a>
+        
+  </div>
+  <div class="footer">Updated 2026-02-15 16:26 UTC</div>
 </main>
-
-<script>
-fetch("ig/posts.json")
-  .then(response => response.json())
-  .then(posts => {
-    const container = document.getElementById("instagram-feed");
-
-    posts.forEach(post => {
-      const card = document.createElement("a");
-      card.href = post.permalink;
-      card.target = "_blank";
-      card.className = "card";
-
-      const caption = post.caption ? post.caption : "";
-
-      card.innerHTML = `
-        <img src="${post.media_url}" alt="">
-        <div class="meta">
-          <div class="caption">${caption}</div>
-          <div class="link">Open on Instagram ↗</div>
-        </div>
-      `;
-
-      container.appendChild(card);
-    });
-  })
-  .catch(error => {
-    console.error("Error loading Instagram posts:", error);
-  });
-</script>
-
 </body>
 </html>
